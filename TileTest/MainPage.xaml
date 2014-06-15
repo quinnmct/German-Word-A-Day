@@ -1,0 +1,78 @@
+﻿<phone:PhoneApplicationPage
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:UI="clr-namespace:Microsoft.Advertising.Mobile.UI;assembly=Microsoft.Advertising.Mobile.UI"
+    x:Class="TileTest.MainPage"
+	mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar.tiles.plus.png" 
+                                            Text="add live tile"
+                                            Click="ApplicationBarIconButton_Click_1"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar.settings.png" 
+                                            Text="settings"
+                                            Click="ApplicationBarIconButton_Click_2"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/appbar.home.question.png" 
+                                            Text="about"
+                                            Click="ApplicationBarIconButton_Click_3"/>
+            
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource PhoneChromeBrush}">
+        <TextBlock x:Name="updateText" HorizontalAlignment="Left" 
+                   VerticalAlignment="bottom" Text="Last update:" Margin="15,15,15,80"/>
+        <Border BorderBrush="{StaticResource PhoneBorderBrush}" BorderThickness="3" Margin="5,5,5,80">
+            <StackPanel Margin="12" >
+                <TextBlock Text="German Word A Day" HorizontalAlignment="left" 
+                   VerticalAlignment="Bottom" Margin="0,0,0,4"/>
+                <Border BorderBrush="{StaticResource PhoneAccentBrush}" BorderThickness="8">
+                    <StackPanel Margin="8">
+                        <TextBlock x:Name="wordOfDayText" FontSize="45" 
+                               Margin="0,5,5,5" Text="Welcome To:" TextWrapping="Wrap"/>
+                        <TextBlock Text="_______________________________________________________" Margin="0,-25,0,0"/>
+                        <TextBlock x:Name="definitionText" FontSize="35"
+                               Margin="28,-10,5,30" Text="German Word a day" TextWrapping="Wrap"/>
+
+                        <Grid Background="{StaticResource PhoneBackgroundBrush}" >
+                            <TextBlock TextWrapping="Wrap" x:Name="useItInSentenceText" 
+                               FontSize="30" Margin="28,5,5,35" 
+                                       Text="Start by adding a live tile to your home screen below:" FontFamily="Segoe UI"/>
+                        </Grid>
+                        <StackPanel Orientation="Horizontal" Background="{StaticResource PhoneBackgroundBrush}">
+                            <Button x:Name="englishButton" Content="English" Click="SpeakEnglish" HorizontalAlignment="Left" Width="200" Visibility="Collapsed"/>
+                            <Button x:Name="germanButton" Content="German" Click="SpeakGerman" HorizontalAlignment="Right" Width="200" Visibility="Collapsed"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+
+                <Grid x:Name="templateGrid" Width="173" Height="173" Margin="0,500,0,0" >
+                    <Rectangle x:Name="rect" Fill="{StaticResource PhoneAccentBrush}"/>
+                    <TextBlock x:Name="titleTile" Text="" TextWrapping="Wrap" Foreground="White"
+                           FontSize="22" Margin="12,5,5,5"/>
+                    <TextBlock x:Name="defineTile" Text="" TextWrapping="Wrap" Foreground="White"
+                           FontSize="17" Margin="17,35,5,5"/>
+                    <TextBlock Text="_____________________" FontSize="30" 
+                           Foreground="White" Margin="0,110,0,0"/>
+                </Grid>
+
+            </StackPanel>
+        </Border>
+        <UI:AdControl ApplicationId="cf357d2e-df82-408d-a2aa-8d59af44e1dc" AdUnitId="148149" Height="80" Width="480"
+                              HorizontalAlignment="Left" VerticalAlignment="Bottom" />
+
+    </Grid>
+
+</phone:PhoneApplicationPage>
+

@@ -1,0 +1,5 @@
+C:\Users\mctiernan\documents\visual studio 2012\Projects\TileTest\ScheduledTaskAgent1\Bin\Release\ScheduledTaskAgent1.dll
+C:\Users\mctiernan\documents\visual studio 2012\Projects\TileTest\ScheduledTaskAgent1\Bin\Release\ScheduledTaskAgent1.pdb
+C:\Users\mctiernan\documents\visual studio 2012\Projects\TileTest\ScheduledTaskAgent1\obj\Release\ScheduledTaskAgent1.dll
+C:\Users\mctiernan\documents\visual studio 2012\Projects\TileTest\ScheduledTaskAgent1\obj\Release\ScheduledTaskAgent1.pdb
+C:\Users\mctiernan\Documents\Visual Studio 2012\Projects\TileTest\ScheduledTaskAgent1\obj\Release\ScheduledTaskAgent1.csprojResolveAssemblyReference.cache

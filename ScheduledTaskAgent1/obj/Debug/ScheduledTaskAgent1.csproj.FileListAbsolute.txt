@@ -1,0 +1,4 @@
+C:\Users\mctiernan\Documents\Visual Studio 2012\Projects\TileTest\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.dll
+C:\Users\mctiernan\Documents\Visual Studio 2012\Projects\TileTest\ScheduledTaskAgent1\Bin\Debug\ScheduledTaskAgent1.pdb
+C:\Users\mctiernan\Documents\Visual Studio 2012\Projects\TileTest\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.dll
+C:\Users\mctiernan\Documents\Visual Studio 2012\Projects\TileTest\ScheduledTaskAgent1\obj\Debug\ScheduledTaskAgent1.pdb
